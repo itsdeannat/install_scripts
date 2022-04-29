@@ -9,7 +9,7 @@ packages=("pip" "python" "vim" "npm" "hugo" "eleventy")
 # select construct generates a numbered menu
 select package in "${packages[@]}"
 do
-    # leave the loop if the user stays 'done'
+    # leave the loop if the user says 'done'
     if [[ "$REPLY" = "done" ]]; then break; fi
 
     # complain if no file was selected, and loop to ask again 
